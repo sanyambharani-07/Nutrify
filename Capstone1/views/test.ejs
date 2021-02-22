@@ -1,0 +1,39 @@
+<!-- include header -->
+<%- include('partials/_header') %>
+<!-- /include header -->
+
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/tracker" class="border-shadow">
+                    <span class="text-gradient"> Add New Meal <i class="fas fa-user"></i></span>
+                </a>
+            </div>
+
+            <!-- form handling -->
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <!-- <th>ID</th> -->
+                            <th>MealName</th>
+                            <th>MealType</th>
+                            <th>Description</th>
+                            <th>calories</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('partials/_show') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('partials/_footer') %>
+<!-- /include footer -->

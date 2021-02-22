@@ -1,0 +1,54 @@
+<!-- include header -->
+<%- include('partials/_header') %>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> All Meals</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update Meal</h2>
+            <span class="text-dark">Use the below form to Update your Meal</span>
+        </div>
+
+        <!-- add user form -->
+         <!-- form handling -->
+         <form action="/" method="POST" id="add_user">
+            <div class="new_user">
+                <div class="form-group">
+                    <label for="mealname" class="text-dark">Meal Name</label>
+                    <input type="hidden" name="id" value="">
+                    <input type="text" name="mealname" value="" placeholder="Rice">
+                </div>
+                <div class="form-group">
+                    <label for="mealtype" class="text-dark">Meal-Type</label>
+                    <input type="text" name="mealtype" value="" placeholder="lunch">
+                </div> 
+                <div class="form-group">
+                    <label for="description" class="text-dark">Description</label>
+                    <input type="text" name="description" value="" placeholder="Description">
+                </div> 
+                <div class="form-group">
+                    <label for="calories" class="text-dark">Calories</label>
+                    <input type="text" name="calories" value="" placeholder="calories">
+                </div>
+                
+        
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update">Save</button>
+                </div>
+        
+            </div>
+        </form>
+       
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('partials/_footer') %>
+<!-- /include footer -->

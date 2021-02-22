@@ -1,0 +1,31 @@
+<h1 class="mt-4">Dashboard</h1>
+
+
+
+<form action="/meals/tracker" method="POST"class="meal-form">
+    <h2>Add a meal</h2>
+    <div class="field-group">
+        <label for="mealname">MealName</label>
+        <input id="mealname" name="mealname"type="text" placeholder="What did you eat?" autocomplete="off">
+    </div>
+    <div class="field-group">
+        <label for="mealtype">Meal Type</label>
+        <input id="mealtype" name="mealtype" type="text" placeholder="" autocomplete="off">
+    </div> 
+    <div class="field-group">
+        <label for="description">Description</label>
+        <input id="description" name="description" type="text" placeholder="" autocomplete="off">
+    </div>
+    <div class="field-group"> 
+        <label for="calories">Calories</label>
+        <input id="calories" name="calories" type="number" placeholder="" autocomplete="off">
+    </div>
+
+    <button class="add-meal" type="submit">Add meal</button>
+</form>
+
+<!-- <div class="meals">
+    <h3>Meals</h3>
+    <ul class="meal-list"></ul>
+</div>
+<script src="js/meal.js"></script> -->
